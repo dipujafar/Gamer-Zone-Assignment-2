@@ -1,0 +1,141 @@
+
+/* Shared Styles */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+.btn{
+    background-color: #FF42A5;
+    border-radius: 3rem;
+    border: none;
+    padding: 1.2rem 2.5rem;
+}
+/* Header section Style */
+
+/* Navber Styles */
+header{
+    max-height: 100vh;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(163, 145, 145, 0.05);
+    padding: 0 150px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo-title{
+font-size: 45px;
+font-weight: 700;
+}
+.logo-title span{
+    color: #FF42A5;
+}
+.logo img{
+    width: 86.041px;
+height: 40px;
+}
+.manus ul{
+    display: flex;
+    align-items: center;
+}
+.manus li{
+    list-style: none;
+    
+}
+.manus a{
+    text-decoration: none;
+    margin-left: 1.5rem;
+    color: #3C354F;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.manus a:hover{
+    background-color: bisque;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+#manus-style{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.281);
+    padding: 1rem 1.5rem;
+}
+/* play-like section in header */
+.play-like-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+    padding: 20px 150px;
+}
+.play-like-img img{
+    width: 100%;
+}
+
+.play-like-content h4{
+    color: #0B0223;
+font-size: 3rem;
+font-weight: 600;
+padding: 0;
+margin-bottom: 0;
+}
+.goat-text{
+font-size: 5rem;
+font-weight: 800;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+background: linear-gradient(#F948B2,#8758F1);
+background-clip: text; 
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+padding: 0;
+margin-top: 0;
+margin-bottom: 5px;
+
+}
+.play-like-content p{
+    color: #534C64;
+font-size: 1.2rem;
+font-weight: 500;
+}
+#btn-skyblue{
+    background-color: #4EC5F7;
+    margin-left: 0.5rem;
+}
+/* Gamer section style */
+.gamer-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+    padding: 0 150px;
+}
+.gamer-container img{
+    width: 100%;
+}
+
+@media screen and (max-width:576px) {
+    nav,.play-like-container,.manus ul{
+        flex-direction: column;
+    }
+    nav,.play-like-container{
+        padding: 0 20px;
+    }
+    .manus ul{
+        gap: 25px;
+    }
+}
+@media screen and (min-width : 576px) and (max-width:992px) {
+    nav,.play-like-container{
+        flex-direction: column;
+    }
+    nav,.play-like-container{
+        padding: 0 50px;
+    }
+}
