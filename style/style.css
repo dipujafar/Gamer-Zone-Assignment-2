@@ -11,12 +11,14 @@ body{
     border: none;
     padding: 1.2rem 2.5rem;
 }
+.text-description{
+    color: #534C64;
+font-size: 1rem;
+font-weight: 400;
+}
 /* Header section Style */
 
 /* Navber Styles */
-header{
-    max-height: 100vh;
-}
 nav{
     display: flex;
     justify-content: space-between;
@@ -89,8 +91,6 @@ margin-bottom: 0;
 font-size: 5rem;
 font-weight: 800;
 background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-background-clip: text;
-background: linear-gradient(#F948B2,#8758F1);
 background-clip: text; 
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
@@ -104,38 +104,92 @@ margin-bottom: 5px;
 font-size: 1.2rem;
 font-weight: 500;
 }
+.btn-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
 #btn-skyblue{
     background-color: #4EC5F7;
-    margin-left: 0.5rem;
 }
 /* Gamer section style */
 .gamer-container{
     display: flex;
-    justify-content: space-between;
+    gap: 50px;
     align-items: center;
-    margin-top: 150px;
+    margin: 40px 0;
     padding: 0 150px;
 }
-.gamer-container img{
+img{
+    width: 100%;
+}
+.gamer-content{
+    text-align: right;
+    max-width: 500px;  
+}
+.gamer-content h3{
+font-size: 3rem;
+font-weight: 700;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.gamer-content p{
+    color: #534C64;
+}
+.gamer-text-style{
+    color: #534C64;
+font-size: 1.8rem;
+font-weight: 700;
+}
+/* online game section styles */
+.online-game-heading{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.online-game-img-container{
+    display: flex;
+    gap: 10px;
+    padding: 0 150px;
+}
+.online-game-img{
     width: 100%;
 }
 
+
 @media screen and (max-width:576px) {
-    nav,.play-like-container,.manus ul{
+    nav,.manus ul,.gamer-container{
         flex-direction: column;
     }
-    nav,.play-like-container{
+    .play-like-container{
+        flex-direction: column-reverse;
+    }
+    nav,.play-like-container,.gamer-container{
         padding: 0 20px;
     }
     .manus ul{
         gap: 25px;
+    }
+    .manus a{
+        margin: 0;
+        padding: 0;
+    }
+    .gamer-content{
+        text-align: center;
     }
 }
 @media screen and (min-width : 576px) and (max-width:992px) {
     nav,.play-like-container{
         flex-direction: column;
     }
-    nav,.play-like-container{
+    .gamer-container{
+        flex-direction: column-reverse;
+    }
+    nav,.play-like-container,.gamer-container{
         padding: 0 50px;
+    }
+    .gamer-content{
+        text-align: center;
     }
 }
